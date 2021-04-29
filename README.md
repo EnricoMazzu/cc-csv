@@ -41,8 +41,7 @@ Andrea,52
 
 
 Eccezioni:
-Il metodo generera una IllegalArgumentException se l'array di columns è nullo o vuoto
-Il metodo generera una IllegalArgumentException se l'array di columns contiene stringhe di colonne non presenti nel csv
-Il testo di quest'ultima eccezione deve essere: 
-"Missing columns: " + invalidColumnsCount
+Il metodo generera:
+- IllegalArgumentException se l'array di columns è nullo o vuoto
+- IllegalArgumentException se l'array di columns contiene stringhe di colonne non presenti nel csv. Il testo di quest'ultima eccezione deve essere: "Missing columns: " + invalidColumnsCount
 
