@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.fabrick.hindex</groupId>
-    <artifactId>TestHindex</artifactId>
+    <artifactId>cc-csv</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
