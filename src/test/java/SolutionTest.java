@@ -59,4 +59,21 @@ public class SolutionTest {
         });
     }
 
+    @Test
+    public void illegalArgumentsColumns(){
+        String test =
+                "LastName,FirstName,Age,Job\n" +
+                        "Mazzucchelli,Enrico,30,Developer\n" +
+                        "Devil,Andrea,52,Bella domanda\n" ;
+        Solution solution = new Solution();
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            try {
+                solution.customPrint(test, new String[]{"invalid_name","Age"});
+            }catch (IllegalArgumentException ex){
+                assertEquals("Missing columns: 1", ex.getMessage());
+                throw ex;
+            }
+        });
+    }
+
 }
