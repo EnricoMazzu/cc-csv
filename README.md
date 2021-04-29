@@ -1,4 +1,4 @@
-Si implementi la funzione customPrint della classe Solutions
+Si implementi la funzione customPrint della classe Solution
 
 ~~~~
     /**
